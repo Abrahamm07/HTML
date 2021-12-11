@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta content="Abraham" name="author">
+    <meta content="Practica de html" name="description">
+    <meta content="motos" name="keywords">
+    
+    <title>MotopuñoMB</title>
+
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="iconos.css">
+    
+    <link rel="shortcut icon" type="image/ico" href="Images/casco.ico"/>
+    
+    <style>        
+          body{background-color:black;font-family:arial;font-size:20px;}
+          @keyframes imagenes {
+            0%{background-image: url(Images/moto1.jpg);height:400px;width:650px}
+            40%{background-image: url(Images/moto1.jpg);height:400px;width:650px}
+            60%{background-image: url(Images/moto2.jpg);height:400px;width:650px}
+            100%{background-image: url(Images/moto2.jpg);height:400px;width:650px}
+            }
+          
+          .icon{color:white}
+            .icon:hover{color:#CAC031;}
+          .icon2{color:black}
+            .icon2:hover{color:#CAC031;}
+          #cambio:hover{color:#CAC031}
+          
+          a{text-decoration:none;color:white;padding-right:50px;padding-left:50px}
+          .barramenu{z-index:100;border-bottom:3px groove;border-color:white;position:fixed;left:0px;width:100%;margin-left:auto;margin-right:auto;margin-top:-10px;}
+          div .menu{text-align:center;display:inline-block;width:100%;background-color:black;padding-top:30px;padding-bottom:30px}
+          
+          
+          .intro{position:relative;top:150px;margin-left:17%;margin-right:17%;background-color:#EAEAEA;width:1300px;height:500px;border-radius:10px}
+          .imagen{position:absolute;top:45px;left:20px;height:80%;width:50%;animation-name:imagenes;animation-duration:4s;animation-iteration-count:infinite;animation-direction:alternate;}
+          .texto{position:absolute;top:45px;left:750px;width:500px;height:400px;margin-top:10px}
+          .texto div span{color:orange;display:block;margin-left:10px;margin-right:10px;text-align:justify}
+          
+         
+          .celdas{position:relative;top:350px;display:grid;grid-template-columns: 50% 50% ;margin-left:100px;margin-right:100px;margin-bottom:650px;gap:1em;left:235px;height:1600px;width:65%;}
+            @media screen and (max-width:1100px){
+             .celdas{grid-template-columns:50%;}
+             .refer{position:relative;top:1300px}
+            }
+          .cuadrado{position:relative;background-color:#EAEAEA;height:360px;width:590px;margin-left:50px;margin:1px;border-radius:5px}
+            .cuadrado:hover{box-shadow: 0px 0px 20px 2px yellow;background-color:#916357}
+          .foto{position:absolute;width:60%;height:75%;top:0px;left:0px;border-bottom:1px groove;border-right:1px groove;}
+            .motofoto{width:100%;height:100%}
+          .prop{position:absolute;width:40%;height:100%;top:0px;left:60%;}
+          .npyb{position:absolute;width:60%;height:25%;top:75%;left:0px;}
+            .nombre{position:absolute;width:100%;height:50%;left:0px;top:0px;text-align:center;text-decoration:underline;font-size:30px}
+            .precio{position:absolute;width:50%;height:50%;left:0px;top:50%;text-align:center;}
+              .precionum{margin-top:10px}
+            .huecoboton{position:absolute;width:50%;height:50%;left:50%;top:50%;text-align:center;}
+              .boton{width:20px;height:20px;margin-top:10px;margin-left:40%}
+          
+          
+          .refer{position:relative;left:17%;right:17%;width:1300px;height:500px;bottom:100px;background-color:#EAEAEA;border-radius:10px}
+            .referajustes{position:absolute;left:500px;top:50px}
+          .lista{text-decoration:none;color:black;}
+          
+        
+    </style>
+    
+    
+  </head>
+  <body>
+      <span id="introduc"></span>
+                                                  <!-- Menu de arriba -->      <!-- Animacion de imagen --> 
+      <div class="barramenu">
+        <div class="menu">
+          <a id="cambio" href="#introduc">Introducción</a>
+          <a id="cambio" href="#motos">Motos</a>
+          <a id="cambio" href="#referencias">Referencias</a>
+          <a class="icon icon-cart" href=""></a>
+        </div>
+      </div>
+      
+      
+                                                  <!--Introducción -->
+      
+      <div class="intro" >
+      
+        <div class="imagen"></div>
+        
+          <div class="texto">
+            <h2 style="text-align:center;text-decoration:underline;">¿Quiénes somos?</h2>
+              <div>                                          <!--1-->   
+              <span>Somos un grupo de aficionados a las motos   </span>
+              <span>que decidimos crear una pagina para la venta</span>
+              <span>de las mismas por lo que esta tienda es un  </span>
+              <span>proyecto nuestro sobre nuestra hermosa afición</span>
+              </div>       
+        </div>      
+      </div> 
+      
+      <span id="motos"></span>
+                                                   <!-- Contenido de compras/motos -->                                     
+      <div class="celdas" >
+      
+      
+          <div class="cuadrado">               <!-- Moto1 -->
+              <div class="foto">
+                <img class="motofoto" src="Images/motos/rieju.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>125cc 4 tiempos</li>
+                  <li>consumo 4,1L/100km</li>
+                  <li>27,3" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Rieju Mrt 125</div>
+                <div class="precio">
+                  <div class="precionum">4000€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div>
+          
+          
+          
+          <div class="cuadrado">              <!-- Moto2 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/senda.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>125cc 4 tiempos</li>
+                  <li>consumo 3,9L/100km</li>
+                  <li>26,9" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Derbi senda 125 sm pro</div>
+                <div class="precio">
+                  <div class="precionum">4000€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div>   
+          
+          
+          <div class="cuadrado">           <!-- Moto3 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/mt.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>125cc 4 tiempos</li>
+                  <li>2,6L/100Km</li>
+                  <li>27" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Yamaha mt125</div>
+                <div class="precio">
+                  <div class="precionum">4500€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div>  
+          
+          
+          <div class="cuadrado">                   <!-- Moto4 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/duke.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>125cc 4 tiempos</li>
+                  <li>2,7L/100Km</li>
+                  <li>27" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">ktm Duke 125</div>
+                <div class="precio">
+                  <div class="precionum">4500€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div>
+          
+          
+          <div class="cuadrado">         <!-- Moto5 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/r1.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>999cc 4 tiempos</li>
+                  <li>6,2L/100Km</li>
+                  <li>27" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Yamaha YZF-R1</div>
+                <div class="precio">
+                  <div class="precionum">30.000€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div> 
+          
+          
+          <div class="cuadrado">           <!-- Moto6 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/rc.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>630cc 4 tiempos</li>
+                  <li>5,4L/100Km</li>
+                  <li>26,8" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Ktm Rc</div>
+                <div class="precio">
+                  <div class="precionum">7400€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div> 
+          
+          
+          <div class="cuadrado">              <!-- Moto7 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/ninja.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>999cc 4 tiempos</li>
+                  <li>6,3L/100Km</li>
+                  <li>27,2" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Kawasaki Ninja 1000sx</div>
+                <div class="precio">
+                  <div class="precionum">30.000€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div>
+          
+          
+          <div class="cuadrado">         <!-- Moto8 -->
+            <div class="foto">
+                <img class="motofoto" src="Images/motos/harley.jpg">
+              </div>
+              <div class="prop">
+                <h2 style="text-decoration:underline;text-align:center">Características</h2>
+                <ul>
+                  <li>883cc 4 tiempos</li>
+                  <li>5,3L/100Km</li>
+                  <li>26,7" de diámetro</li>
+                  <li>6 marchas</li>
+                </ul>
+              </div>
+              
+              <div class="npyb">            <!-- Boton y precio -->
+                <div class="nombre">Harley-Davidson sportster</div>
+                <div class="precio">
+                  <div class="precionum">11.000€
+                  </div>
+                </div>
+                <div class="huecoboton">
+                  <div class="boton icon2 icon-plus"></div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <span id="referencias"></span>
+                             <!-- Referencias -->
+      <div class="refer">
+        <div class="referajustes">
+          <h2 style="text-align:center;text-decoration:underline;">Enlaces externos</h2>
+          <ul>
+            <li><a class="lista" href="https://www.instagram.com/abrahaam_07_/" target="_blank">Mi Instargram</a></li>
+            <li><a class="lista" href="https://neocities.org/" target="_blank">Neocities</a></li>
+            <li><a class="lista" href="https://aulasbach2122.castillalamancha.es/" target="_blank">Educamos</a></li>
+            <li><a class="lista" href="https://motos.coches.net/" target="_blank">Más motos</a></li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
