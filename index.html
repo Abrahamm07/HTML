@@ -10,13 +10,13 @@
     
     <title>MotopuñoMB</title>
 
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="iconos.css">
     
     <link rel="shortcut icon" type="image/ico" href="Images/casco.ico"/>
     
     <style>        
-          body{background-color:black;font-family:arial;font-size:20px;}
+        body{background-color:black;font-family:arial;font-size:20px;}
           @keyframes imagenes {
             0%{background-image: url(Images/moto1.jpg);height:400px;width:650px}
             40%{background-image: url(Images/moto1.jpg);height:400px;width:650px}
@@ -41,29 +41,41 @@
           .texto div span{color:orange;display:block;margin-left:10px;margin-right:10px;text-align:justify}
           
          
-          .celdas{position:relative;top:350px;display:grid;grid-template-columns: 50% 50% ;margin-left:100px;margin-right:100px;margin-bottom:650px;gap:1em;left:235px;height:1600px;width:65%;}
-            @media screen and (max-width:1100px){
-             .celdas{grid-template-columns:50%;}
-             .refer{position:relative;top:1300px;left:30%}
-            }
-          .cuadrado{position:relative;background-color:#EAEAEA;height:360px;width:590px;margin-left:50px;margin:1px;border-radius:5px}
+          .celdas{position:relative;top:350px;display:grid;grid-template-columns: 50% 50% ;margin-left:7%;margin-right:7%;margin-bottom:650px;gap:1em;left:12%;height:1600px;width:65%;}
+          .cuadrado{position:relative;background-color:#EAEAEA;height:360px;width:90%;margin-left:50px;margin:1px;border-radius:5px;left:3%}
             .cuadrado:hover{box-shadow: 0px 0px 20px 2px yellow;background-color:#916357}
           .foto{position:absolute;width:60%;height:75%;top:0px;left:0px;border-bottom:1px groove;border-right:1px groove;}
             .motofoto{width:100%;height:100%}
           .prop{position:absolute;width:40%;height:100%;top:0px;left:60%;}
           .npyb{position:absolute;width:60%;height:25%;top:75%;left:0px;}
-            .nombre{position:absolute;width:100%;height:50%;left:0px;top:0px;text-align:center;text-decoration:underline;font-size:30px}
+            .nombre{position:absolute;width:100%;height:50%;left:0px;top:0px;text-align:center;text-decoration:underline;font-size:125%}
             .precio{position:absolute;width:50%;height:50%;left:0px;top:50%;text-align:center;}
               .precionum{margin-top:10px}
             .huecoboton{position:absolute;width:50%;height:50%;left:50%;top:50%;text-align:center;}
               .boton{width:20px;height:20px;margin-top:10px;margin-left:40%}
           
           
-          .refer{position:relative;left:17%;right:17%;width:1300px;height:500px;bottom:100px;background-color:#EAEAEA;border-radius:10px}
+          .refer{position:relative;left:17%;right:17%;width:70%;height:500px;bottom:100px;background-color:#EAEAEA;border-radius:10px;margin-bottom:200px;}
             .referajustes{position:absolute;left:500px;top:50px}
           .lista{text-decoration:none;color:black;}
-          
-        
+
+
+          @media screen and (max-width:550px){
+            .intro{width:70%;height:1000px;}
+              .imagen{height:50%;}
+              .texto{top:60%;left:3%;width:80%;font-size:80%;}
+
+
+             .celdas{grid-template-columns:90%;width:90%;left:1%;}           
+             .cuadrado{width:100%;height:300px;}
+             .foto{height:50%}
+             .carac{width:90%;font-size:90%;font-weight:bold;margin-left:7%;margin-top:10%;}
+             .caracli{width:90%;font-size:80%;position:absolute;left:-5%;top:12%}
+             .nombre{font-size:90%;}
+
+             .refer{position:relative;top:800px;left:15%;height:180px;margin-bottom:900px;}
+              .referajustes{position:absolute;left:10%;top:5%;font-size:80%;}
+            }  
     </style>
     
     
@@ -108,8 +120,8 @@
                 <img class="motofoto" src="Images/motos/rieju.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>125cc 4 tiempos</li>
                   <li>consumo 4,1L/100km</li>
                   <li>27,3" de diámetro</li>
@@ -136,8 +148,8 @@
                 <img class="motofoto" src="Images/motos/senda.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>125cc 4 tiempos</li>
                   <li>consumo 3,9L/100km</li>
                   <li>26,9" de diámetro</li>
@@ -163,8 +175,8 @@
                 <img class="motofoto" src="Images/motos/mt.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>125cc 4 tiempos</li>
                   <li>2,6L/100Km</li>
                   <li>27" de diámetro</li>
@@ -190,8 +202,8 @@
                 <img class="motofoto" src="Images/motos/duke.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>125cc 4 tiempos</li>
                   <li>2,7L/100Km</li>
                   <li>27" de diámetro</li>
@@ -217,8 +229,8 @@
                 <img class="motofoto" src="Images/motos/r1.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>999cc 4 tiempos</li>
                   <li>6,2L/100Km</li>
                   <li>27" de diámetro</li>
@@ -244,8 +256,8 @@
                 <img class="motofoto" src="Images/motos/rc.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>630cc 4 tiempos</li>
                   <li>5,4L/100Km</li>
                   <li>26,8" de diámetro</li>
@@ -271,8 +283,8 @@
                 <img class="motofoto" src="Images/motos/ninja.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>999cc 4 tiempos</li>
                   <li>6,3L/100Km</li>
                   <li>27,2" de diámetro</li>
@@ -298,8 +310,8 @@
                 <img class="motofoto" src="Images/motos/harley.jpg">
               </div>
               <div class="prop">
-                <h2 style="text-decoration:underline;text-align:center">Características</h2>
-                <ul>
+                <h2 class="carac" style="text-decoration:underline;text-align:center">Características</h2>
+                <ul class="caracli">
                   <li>883cc 4 tiempos</li>
                   <li>5,3L/100Km</li>
                   <li>26,7" de diámetro</li>
@@ -333,49 +345,4 @@
         </div>
       </div>
   </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
